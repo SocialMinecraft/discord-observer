@@ -1,0 +1,22 @@
+{
+  "name": "discord-observer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+    "scripts": {
+	"dev": "tsx watch src/index.ts",
+	"start": "node dist/index.js",
+	"build": "tsup src/index.ts --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
+  }
+}
