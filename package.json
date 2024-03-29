@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "scripts": {
-	"dev": "tsx watch src/index.ts",
-	"start": "node dist/index.js",
-	"build": "tsup src/index.ts --minify"
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsup src/index.ts --minify"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.14.1",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "nats": "^2.21.0",
+    "protobufjs": "^7.2.6"
   },
   "devDependencies": {
     "tsup": "^8.0.2",
