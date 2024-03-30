@@ -13,7 +13,7 @@ const client = new Client({
 });
 
 client.on("guildMemberAdd", async (data) => {
-    protobuf.load("../proto/discord_member.proto", (err: any, root: any) => {
+    protobuf.load("./proto/discord_member.proto", (err: any, root: any) => {
         if (err)
             throw err;
 
@@ -37,7 +37,7 @@ client.on("guildMemberAdd", async (data) => {
 });
 
 client.on("guildMemberRemove", async (data) => {
-    protobuf.load("../proto/discord_member.proto", (err: any, root: any) => {
+    protobuf.load("./proto/discord_member.proto", (err: any, root: any) => {
         if (err)
             throw err;
 
@@ -82,7 +82,7 @@ client.on("voiceStateUpdate", async (oldState, data ) => {
 });
 
 client.on("messageCreate", async (data) => {
-    protobuf.load("../proto/discord_message.proto", (err: any, root: any) => {
+    protobuf.load("./proto/discord_message.proto", (err: any, root: any) => {
         if (err)
             throw err;
 
@@ -129,7 +129,7 @@ start();
 
 
 function enterVoiceChatMsg(data: VoiceState) {
-    protobuf.load("../proto/discord_voice.proto", (err: any, root: any) => {
+    protobuf.load("./proto/discord_voice.proto", (err: any, root: any) => {
         if (err)
             throw err;
 
@@ -164,7 +164,7 @@ function enterVoiceChatMsg(data: VoiceState) {
 }
 
 function leaveVoiceChatMsg(data: VoiceState) {
-    protobuf.load("../proto/discord_voice.proto", (err: any, root: any) => {
+    protobuf.load("./proto/discord_voice.proto", (err: any, root: any) => {
         if (err)
             throw err;
 
